@@ -1,14 +1,114 @@
 {
-  "small_llm": {
-    "description": "Small language model (~7B parameters)",
-    "energy_per_1k_tokens_wh": 0.3
+  "gpt-3": {
+    "provider": "OpenAI",
+    "params": "175B",
+    "architecture": "dense",
+    "complexity_factor": 1.0,
+    "architecture_efficiency": 1.0
   },
-  "medium_llm": {
-    "description": "Medium language model (~30B parameters)",
-    "energy_per_1k_tokens_wh": 1.2
+  "gpt-3.5": {
+    "provider": "OpenAI",
+    "params": "175B",
+    "architecture": "dense",
+    "complexity_factor": 1.05,
+    "architecture_efficiency": 0.95
   },
-  "large_llm": {
-    "description": "Large language model (70B+ parameters)",
-    "energy_per_1k_tokens_wh": 3.5
+  "gpt-4": {
+    "provider": "OpenAI",
+    "params": "MoE ~1T",
+    "architecture": "moe",
+    "complexity_factor": 1.8,
+    "architecture_efficiency": 0.85
+  },
+  "gpt-4-turbo": {
+    "provider": "OpenAI",
+    "params": "MoE optimized",
+    "architecture": "moe",
+    "complexity_factor": 1.5,
+    "architecture_efficiency": 0.9
+  },
+  "claude-3-opus": {
+    "provider": "Anthropic",
+    "params": "MoE large",
+    "architecture": "moe",
+    "complexity_factor": 1.6,
+    "architecture_efficiency": 0.88
+  },
+  "claude-3-sonnet": {
+    "provider": "Anthropic",
+    "params": "MoE medium",
+    "architecture": "moe",
+    "complexity_factor": 1.1,
+    "architecture_efficiency": 0.9
+  },
+  "claude-3-haiku": {
+    "provider": "Anthropic",
+    "params": "MoE small",
+    "architecture": "moe",
+    "complexity_factor": 0.7,
+    "architecture_efficiency": 0.92
+  },
+  "llama-3-8b": {
+    "provider": "Meta",
+    "params": "8B",
+    "architecture": "dense",
+    "complexity_factor": 0.18,
+    "architecture_efficiency": 1.0
+  },
+  "llama-3-70b": {
+    "provider": "Meta",
+    "params": "70B",
+    "architecture": "dense",
+    "complexity_factor": 0.85,
+    "architecture_efficiency": 0.95
+  },
+  "mistral-7b": {
+    "provider": "Mistral",
+    "params": "7B",
+    "architecture": "dense",
+    "complexity_factor": 0.14,
+    "architecture_efficiency": 1.0
+  },
+  "mixtral-8x7b": {
+    "provider": "Mistral",
+    "params": "MoE 56B",
+    "architecture": "moe",
+    "complexity_factor": 0.6,
+    "architecture_efficiency": 0.9
+  },
+  "mixtral-8x22b": {
+    "provider": "Mistral",
+    "params": "MoE 176B",
+    "architecture": "moe",
+    "complexity_factor": 1.1,
+    "architecture_efficiency": 0.88
+  },
+  "gemini-pro": {
+    "provider": "Google",
+    "params": "unknown",
+    "architecture": "moe",
+    "complexity_factor": 1.0,
+    "architecture_efficiency": 0.9
+  },
+  "gemini-ultra": {
+    "provider": "Google",
+    "params": "large MoE",
+    "architecture": "moe",
+    "complexity_factor": 1.7,
+    "architecture_efficiency": 0.85
+  },
+  "falcon-40b": {
+    "provider": "TII",
+    "params": "40B",
+    "architecture": "dense",
+    "complexity_factor": 0.55,
+    "architecture_efficiency": 0.95
+  },
+  "falcon-180b": {
+    "provider": "TII",
+    "params": "180B",
+    "architecture": "dense",
+    "complexity_factor": 1.3,
+    "architecture_efficiency": 0.9
   }
 }
