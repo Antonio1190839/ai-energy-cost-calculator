@@ -1,1 +1,14 @@
-
+{
+  "small_llm": {
+    "description": "Small language model (~7B parameters)",
+    "energy_per_1k_tokens_wh": 0.3
+  },
+  "medium_llm": {
+    "description": "Medium language model (~30B parameters)",
+    "energy_per_1k_tokens_wh": 1.2
+  },
+  "large_llm": {
+    "description": "Large language model (70B+ parameters)",
+    "energy_per_1k_tokens_wh": 3.5
+  }
+}
