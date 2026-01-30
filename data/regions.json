@@ -1,0 +1,5 @@
+{
+  "EU": { "co2_g_per_kwh": 275 },
+  "US": { "co2_g_per_kwh": 385 },
+  "FR": { "co2_g_per_kwh": 55 }
+}
