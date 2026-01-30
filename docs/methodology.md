@@ -1,13 +1,11 @@
-# Methodology
+## Energy model
 
-This calculator estimates the energy and carbon cost of AI inference.
+Energy consumption is estimated as a function of:
+- total number of processed tokens
+- model size and architecture
+- inference reasoning complexity
+- architecture efficiency (dense vs MoE)
 
-## Scope
-- Inference only (no model training)
-- Average energy consumption per token
-- Publicly available carbon intensity data
-
-## Assumptions
-- Energy per 1k tokens is an order of magnitude
-- Infrastructure efficiency varies
-- Results are estimates, not measurements
+Per-model energy measurements are not publicly available.
+This project uses architecture-based scaling factors derived from
+academic literature and public infrastructure disclosures.
