@@ -1,0 +1,18 @@
+{
+  "simple": {
+    "description": "Short factual or retrieval-based prompt",
+    "factor": 1.0
+  },
+  "standard": {
+    "description": "General conversational or structured response",
+    "factor": 1.2
+  },
+  "complex": {
+    "description": "Multi-step reasoning, analysis, or long-form generation",
+    "factor": 1.5
+  },
+  "very_complex": {
+    "description": "Chain-of-thought heavy reasoning or code generation",
+    "factor": 1.8
+  }
+}
